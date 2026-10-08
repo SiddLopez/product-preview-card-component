@@ -12,3 +12,15 @@
     --info-padding: none;
     --elements-margin: none;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}

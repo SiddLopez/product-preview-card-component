@@ -66,6 +66,14 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
+I learned to make **Responsive Images in HTML** depending on the width of the device.
+```html
+<picture> <!-- Cambio de imagen condicionado al ancho del dispositivo -->
+  <source media="(min-width: 768px)" srcset="./images/image-product-desktop.jpg">
+  <img class="product-image" src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
+</picture>
+```
+
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
