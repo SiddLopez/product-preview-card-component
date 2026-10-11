@@ -9,7 +9,7 @@
     --Cream: hsl(30, 38%, 92%);
     --White: hsl(0, 0%, 100%);
 
-    --info-padding: none;
+    --info-padding: 1rem;
     --elements-margin: none;
 }
 
@@ -34,4 +34,15 @@ body {
 
 .card {
     background-color: var(--White);
+    max-width: 95vw;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.info {
+    padding: var(--info-padding);
 }
