@@ -36,7 +36,7 @@ body {
     background-color: var(--White);
     max-width: 95vw;
     border-radius: 1rem;
-    overflow: hidden;
+    overflow: hidden; /* Evita imagen desbordada */
 }
 
 img {
