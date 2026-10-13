@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     /* Primary colors */
     --Green500: hsl(158, 36%, 37%);
@@ -9,7 +11,7 @@
     --Cream: hsl(30, 38%, 92%);
     --White: hsl(0, 0%, 100%);
 
-    --info-padding: 1rem;
+    --info-padding: 2.1rem;
     --elements-margin: none;
 }
 
@@ -23,6 +25,57 @@ h1,
 h2,
 p {
     margin: 0;
+}
+
+/* Estilos de fuentes */
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.fraunces-font {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.small {
+    font-size: 0.875rem;
+}
+
+.big {
+    font-size: 2rem;
+}
+
+/* Colores de texto */
+.gray {
+    color: var(--Grey);
+}
+
+.new-price {
+    color: var(--Green500);
+}
+
+/* Estilos especificos de elementos */
+.product-name {
+    line-height: 2rem;
+}
+
+.category {
+    font-size: 0.775rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+.description {
+    font-size: 0.875rem;
+    line-height: 1.3rem;
 }
 
 body {
