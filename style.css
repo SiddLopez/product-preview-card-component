@@ -11,8 +11,8 @@
     --Cream: hsl(30, 38%, 92%);
     --White: hsl(0, 0%, 100%);
 
-    --info-padding: 2.1rem;
-    --elements-margin: none;
+    --info-padding: 2rem;
+    --elements-margin: 1.5rem;
 }
 
 *,
@@ -58,22 +58,36 @@ p {
     color: var(--Grey);
 }
 
-.new-price {
+.card__new-price {
     color: var(--Green500);
 }
 
+/* ################# Margenes ################# */
+.card__category, 
+.card__name, 
+.card__description {
+    margin-bottom: var(--elements-margin);
+}
+.card__new-price {
+    margin-bottom: calc(var(--elements-margin) - 0.5rem) ;
+}
+
 /* ######### Estilos especificos de elementos ######### */
-.product-name {
+.card__new-price {
+    display: inline-block;
+}
+
+.card__name {
     line-height: 2rem;
 }
 
-.category {
+.card__category {
     font-size: 0.775rem;
     text-transform: uppercase;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.27rem;
 }
 
-.description {
+.card__description {
     font-size: 0.875rem;
     line-height: 1.3rem;
 }
@@ -83,11 +97,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0.25rem;
 }
 
 .card {
     background-color: var(--White);
-    max-width: 95vw;
     border-radius: 1rem;
     overflow: hidden;           /* Evita imagen desbordada */
 }
@@ -96,11 +110,11 @@ img {
     width: 100%;
 }
 
-.info {
+.card__info {
     padding: var(--info-padding);
 }
 
-button {
+.card__button {
     display: flex;              /* Configuraciones para el icono */
     align-items: center;
     justify-content: center;
@@ -116,7 +130,7 @@ button {
     height: 3rem;
 }
 
-button::before {                /* Inserción del ícono */
+.card__button::before {                /* Inserción del ícono */
     content: '';
     width: 15.7px;
     height: 15.7px;
