@@ -58,7 +58,7 @@ p {
     color: var(--Grey);
 }
 
-.card__new-price {
+.card__price__current {
     color: var(--Green500);
 }
 
@@ -68,30 +68,12 @@ p {
 .card__description {
     margin-bottom: var(--elements-margin);
 }
-.card__new-price {
+
+.card__price {
     margin-bottom: calc(var(--elements-margin) - 0.5rem) ;
-}
+}    
 
 /* ######### Estilos especificos de elementos ######### */
-.card__new-price {
-    display: inline-block;
-}
-
-.card__name {
-    line-height: 2rem;
-}
-
-.card__category {
-    font-size: 0.775rem;
-    text-transform: uppercase;
-    letter-spacing: 0.27rem;
-}
-
-.card__description {
-    font-size: 0.875rem;
-    line-height: 1.3rem;
-}
-
 body {
     background-color: var(--Cream);
     display: flex;
@@ -102,9 +84,9 @@ body {
 
 .card {
     background-color: var(--White);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     overflow: hidden;           /* Evita imagen desbordada */
-}
+}    
 
 img {
     width: 100%;
@@ -113,6 +95,28 @@ img {
 .card__info {
     padding: var(--info-padding);
 }
+
+.card__category {
+    font-size: 0.775rem;
+    text-transform: uppercase;
+    letter-spacing: 0.27rem;
+}        
+
+.card__name {
+    line-height: 2rem;
+}        
+
+.card__description {
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+}        
+
+.card__price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}        
 
 .card__button {
     display: flex;              /* Configuraciones para el icono */
@@ -138,3 +142,14 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.attribution { 
+    font-size: 0.6875rem; text-align: center; 
+    bottom: 0.5vw;
+    margin-top: 2rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
