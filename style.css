@@ -162,7 +162,7 @@ img {
     .card__picture {
         width: 100%;
         height: 100%;
-
+        object-fit: cover;
     }
 
     .card__info {
